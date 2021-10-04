@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+{%load static%}
+<head >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style>
+	
+.fandu{
+   box-shadow:5px 10px 10px 5px grey;
+   }
+h1{
+	
+	height: 80px;
+	font-family: "sans-serif";
+	background-color:#323232 ;
+}
+search-form{
+    position: relative;
+    width: 280px;
+    font-size: 16px;
+    padding: 8px 15px;
+    padding-right: 37px;
+    background-color: #BCBCBC;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+		
+.topright {									
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    font-size: 21px;
+    font-color: white;
+    font-style: normal;
+	font-family:Comic Sans MS;
+    width: 440px;
+	padding-top:13px;
+}
+.Banjare{
+	position:absolute;
+	top:30px;
+	left:100px;
+	padding-top:15px;
+}
+.YehJawani{
+	border-radius: 50%;
+    }
+.kyahua{							<!-------------------For Photos --------------------->
+  position:static;
+  top:150%;
+  width: 300px;
+  height: 370px;
+  padding: 15px;
+  background-color: rgb(30,30,30) ;
+  box-shadow: 10px 10px 5px grey;
+  }
+backgroundDp
+		{
+			background-image:url("{%static "Friends.jpg"%}")
+		}
+		
+.card {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  max-width: 550px;
+  text-align: center;
+  font-family: arial;
+  margin-left: 20px;
+
+}
+
+.title {
+  color: white;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+		
+		
+<title>Untitled Document</title>
+
+    .kyahua font {
+    font-family: Constantia, Lucida Bright, DejaVu Serif, Georgia, serif;
+	position:relative;
+	left:11px;
+	bottom:50px;
+}
+
+		
+    .topright1 {
+    position: absolute;
+    top: 2px;
+    right: -415px;
+    font-size: 21px;
+    font-color: white;
+    font-style: normal;
+    font-family: Comic Sans MS;
+    width: 440px;
+}
+.mundiyano {
+   position:relative;
+   top:-80px;
+   left:40px;
+}
+.Azzadi{
+background-image:url("{% static "Kung-Fu-Panda.jpg" %}");
+background-size:100%;
+overflow:hidden;
+z-index:1;
+background-repeat:no-repeat;
+height:500px;
+}
+.Veer{									<!-----------------------------Profiles------------------------>
+  box-border:3px 10px 10px 3px;
+  position:absolute;
+  top:140%;
+  left:425px;
+  width:550px;
+  background-color:rgb(25,25,25);
+  border-radius:25px;
+  padding-top:10px;	
+  <!--margin-right:30px;-->
+}
+
+.Hayye{
+  position:absolute;
+  margin-left:10px;
+  padding-left:10px;
+  text-align:left;
+}
+
+
+.MainTeraHero{
+  box-border:3px 10px 10px 3px;
+  position:absolute;
+  top:85%;
+  border-radius:30px;
+  left:425px;
+  width:550px;
+  height:70px;
+  background-color:rgb(30,30,30);
+  text-align:center;
+  padding-top:10px;
+  <!--margin-right:30px;-->
+}
+
+.MainTeraHero1{								<!----------------Upload Photos-------------->
+  box-border:3px 10px 10px 3px;
+  position:absolute;
+  top:100%;
+  border-radius:30px;
+  left:425px;
+  width:500px;
+  height:180px;
+  background-color:rgb(40,40,40);
+  padding-top:40px;
+  padding-left:40px;
+  <!--margin-right:30px;-->
+}
+.Shanivaar{									<!------------Write a post--------------->
+  position:absolute;
+  left:45px;
+  top:120px;
+}
+ion-icon
+{
+  color:white;
+  font-size:32px;
+}
+
+
+.experiment{							<!-- -----------------Contact----------------------->
+  box-border:3px 10px 10px 3px;
+  position:absolute;
+  top:100%;
+  right:60px;
+  width:200px;
+  background-color:rgb(15,15,15);
+  text-align:center;
+  border-radius:10px;
+  <!--margin-right:30px;-->
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+}
+.fa {
+    color: white !important;
+}
+    </style>
+
+</head >	
+<body bgcolor="#050303">
+<form class="Azzadi"><h1><font color="white"><img src="{% static "Facebooklogo.png" %}" alt="image not found" width="70" height="80"></font>
+<div class="Banjare"><input type="search" placeholder="          Search Friends" style= "padding-top:10px;width:300px;border-radius:30px;height:32px; "pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" size="40" maxlength="500"></div>
+<div class="topright">
+<font color="white">Aman's Facebook &nbsp;&nbsp;&nbsp;</font>
+<span class="material-icons" style="font-size:32px;color:white">person_add</span>&nbsp;&nbsp;&nbsp;
+<span class="material-icons" style="font-size:32px;color:white">sms</span><!--Message-->&nbsp;&nbsp;&nbsp;
+<span class="material-icons" style="font-size:32px;color:white">notifications_active</span><!--Notifications-->
+    <form action="logout/" method="post">
+        {% csrf_token %}
+<a href="logout/"><span class="topright1"><input type="image" src="{% static "Aman1.png" %}" height="35px" width="35px" style="padding-top:12px;"></span></a>&nbsp;&nbsp;&nbsp;&nbsp; </div></h1>
+
+</form>
+</div><p>
+<div class="mundiyano"><img src="{% static "Aman.jpg" %}" height="130px" width="140px"  alt="Image not found" border-width="5px" border-color="white" border-style="solid"></div>
+
+<div class="MainTeraHero">
+<span class="material-icons" style="font-size:32px;color:white">query_builder</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="material-icons" style="font-size:32px;color:white">wc</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="material-icons" style="font-size:32px;color:white">camera</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="material-icons" style="font-size:32px;color:white">offline_bolt</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="material-icons" style="font-size:32px;color:white">archive</span><!--For Archieve-->&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<font color="white">Timeline</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font color="white">Friends</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font color="white">Photos</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font color="white">About</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font color="white">Archive</font>&nbsp;&nbsp;&nbsp;
+</div>
+
+<div class="MainTeraHero1">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="material-icons" style="font-size:32px;color:white">receipt</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="material-icons" style="font-size:32px;color:white">add_a_photo</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="material-icons" style="font-size:32px;color:white">video_library</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<ion-icon name="calendar-outline" ></ion-icon><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="white">Make Post</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font color="white">Photo/Video </font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font color="white">Live Video</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font color="white">Life Event</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<u style="margin-left:40px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>
+<div class="Shanivaar">
+<strong><b><input type="text" placeholder="         Write your Post....." style="border:1px solid white;padding-top:10px;width:440px;height:70px;padding-left:30px;border-radius:30px;top:60;"></b></strong>
+</div>
+</div>
+
+
+
+<div class="Veer">    <!--------------------Post Uploaded  Profiles -------------------->
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static "Aman1.png" %}"width="40px" height="40px" style="padding-top:7px;"><font color="white" style="padding-left:30px;">Aman Mishra shared a memory with Friends</p>
+<span class="material-icons" style="font-size:18px;color:white;text-align:left;">calender_today</span><font color="white" size="2px">19 December 1999</font>
+<u style="margin-left:10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>
+</br>
+<img src="{% static "AmanMishra123.jpg" %}" class="center" width="55px" height="750px"alt="Image not Found"><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{%static "Aman1.png"%}" width="40px" height="40px" style="padding-top:7px;"><font color="white" style="padding-left:30px;">Aman Mishra shared a memory with Friends</p>
+<div class="Hayye"><span class="material-icons" style="font-size:18px;color:white;margin-left:3px;">calender_today</span><font color="white" size="2px">19 December 1999</font></div>
+<img src="{%static "Scene.jpg" %}" class="center" width="50px" style ="align:center;" height="750px"></br></br>
+</div>
+
+<div class="experiment">     <!--------------------Chatting People-------------------->
+<h3><img src="{%static "contact.png" %}" width="25px" height="25px"><font color="white">Contact</font></h3></br></br></br></br>
+<img src="{%static "Boy1.png" %}" width="80px" height="80px"alt="Image not Found"></br></br></br></br></br>
+<img src="{%static "Girl1.png" %}"width="80px" height="80px"></br></br></br></br></br>
+<img src="{%static "Boy2.png" %}"width="80px" height="80px"></br><br></br></br></br>
+<img src="{%static "Girl2.png" %}"alt="Image not found" width="80px" height="80px"></br></br></br></br></br>
+</div>
+
+
+
+<div class="fandu" style="width:320px;">    <!--------------------For Profile Purpose-------------------->
+<div class="card"><align=center style="color:white";>Profile Card
+  <img src="{%static "Resume_profile.jpg" %}" alt="Image not found" style="width:100%">
+  <h3 style="color:white;">Aman Mishra</h3>
+  <p class="title">CEO & Founder</p>
+  <p>Swami Vivekanand College</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="https://twitter.com/AmanMis68012469"><i class="fa fa-twitter"></i></a> 
+	<a href="+917898971320"><i class="fa fa-whatsapp"></i></a> 
+    <a href="https://www.linkedin.com/in/aman-mishra-411648158/"><i class="fa fa-linkedin"></i></a>  
+    <a href="https://www.facebook.com/profile.php?id=100005996381859"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button>Contact</button></p>
+  
+</div>
+</div>
+
+
+
+<div class="kyahua"><font color="White" style="margin-left:100px;"><b> Photos</b></font><br>
+<img src="{%static "Friends.jpg" %}" width="290px" height="360px" alt="Image not Found">
+
+</div>
+</p>
+
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+
+	</html>
+

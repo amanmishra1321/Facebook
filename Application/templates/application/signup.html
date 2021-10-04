@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Facebook</title>
+<style type="text/css">
+h1{
+	Font-Family:Arial;
+	Background-color:rgb(40,40,40);
+	font-weight:bold;
+	font-size:25;
+	height: 70px;
+	border-bottom:3px solid grey;
+	
+}
+div.absolute {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 450px;
+  color:white;
+  height: 10px;
+  
+}
+div.perfect {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 450px;
+  border-bottom:1px solid #fff;
+  background:transparent;
+  color:#fff;
+  border:none;
+  outline:none;
+  <!--height: 10px;--> 
+}div.attention {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  color:white;
+  width: 273px;
+  height: 10px;
+  word-spacing:30px; 
+}
+div.KuchIsTarah {
+  position:absolute;
+  top:130px;
+  right:0;
+  width:500px;
+  height:20px;
+  weight:900;
+}
+div.Ghajini{
+position: relative;
+  top: -66px;
+  right:-1240px;
+  width: 450px;
+  border-bottom:1px solid #fff;
+  background:transparent;
+  color:#fff;
+  border:none;
+  outline:none;
+}
+</style> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<form action="/login/" method="post">
+	{% csrf_token %}
+<h1><font color="White" size="30" font-style="Serif">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; facebook</font></h1>
+<div class="absolute" style= "border-radius:60px;">Email or Phone </div><div class="attention"> Password</div>
+<div class="perfect"><input type="email" name="email"><input type="password" name="password"></div>
+<div class="Ghajini"><input type="submit"value="Login"></div>
+<div class="KuchIsTarah"><font size="100" color="White" weight="1900">Create a new account</font></div>
+</form>
+<img align="left"src="{% static "HomepageImage.jpg" %}" height="600px" width="400px" type="jpg"/><!--E:\Practice\Django\FacebookTrial\Static-->
+
+</body>
+</html>
+<html>
+<head >
+	<style>
+		div.TarifKaruKya{
+	position:absolute;
+	top:200px;
+	right:0;
+	width:500px;
+	height:25px;
+	weight:900;
+    word-spacing:180px;
+}
+
+div.TuCheezBadi{
+position:absolute;
+top:240px;
+right:0;
+width:500px;
+height:25px;
+weight:900;
+}
+div.TujheApnaBanane{
+position:absolute;
+top:280px;
+right:0;
+width:500px;
+height:25px;
+weight:900;
+}
+
+div.TumHiHo{
+position:absolute;
+top:310px;
+right:0;
+width:500px;
+height:25px;
+weight:900;
+font style:Arial;
+}
+div.TuBhiBadal{
+position:absolute;
+top:360px;
+right:0;
+width:500px;
+height:25px;
+weight:900;
+}
+div.WajahTumHo{
+position:absolute;
+top:390px;
+right:0;
+width:500px;
+height:25px;
+weight:900;
+}
+div.YaadHaiNa{
+position:absolute;
+top:440px;
+right:0;
+width:500px;
+height:25px;
+weight:900;
+  
+}
+
+</style>
+
+</head>
+<body style="background-color:black">
+<form action="/signup/" method="post"> {% comment %} Url of Particular function that you want to execute {% endcomment %}
+	{% csrf_token %}
+<div class="login">
+<div class="TarifKaruKya"><input type="text"height="50px"style= "padding-top:5px;width:170px;border-radius:10px;height:15px;"placeholder="    First name" name="firstname"><input type="text" width="25" style= "padding-top:5px;width:170px;border-radius:10px;height:15px;" placeholder="   Surname" name="surname"></div><br>
+<div class="TuCheezBadi"><input type="number" style= "padding-top:5px;width:170px;border-radius:10px;height:15px;" placeholder="    Mobile Number" name="mobile"><input type="email" style= "padding-top:5px;width:170px;border-radius:10px;height:15px;" placeholder="    E-mail address" name="email"></div>
+<div class="TujheApnaBanane"><input type="password" style= "padding-top:5px;width:300px;border-radius:30px;height:20px;"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" size="30" name="password" maxlength="500"placeholder="     Password"></div>
+<div class="TumHiHo">Birthday<br><input type="date" style= "padding-top:5px;width:170px;border-radius:10px;height:15px;" name="birth_date" name="dt"></div>
+<div class="TuBhiBadal"><font color="white">Male<input type="radio"name="gender"value="Male" name="gender">Female<input type="radio" name="gender"value="Female"></font></div>
+<div class="WajahTumHo"><font size="2" color="white">By clicking Signup you agree to our Team,Data Policy and Cookie Policy.You may receive SMS notification from us and can opt out at any time.</font></div>
+<div class="YaadHaiNa"><input type="Submit"value="SignUp"style="font-size:12pt;color:white;background-color:green;border:7px solid #336600;padding:5px"></div>
+</div>
+</form>
+{% for i in messages %}
+   <p style="color:white;"> {{i.label_tag}}:{{i}}</p>
+{% endfor %}
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
